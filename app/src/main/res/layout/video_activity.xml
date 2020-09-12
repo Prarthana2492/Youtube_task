@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#26A541"
+        android:gravity="center_vertical"
+        android:layout_weight="10"
+        android:id="@+id/toolbar_header"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_menu_bar"
+
+            />
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--            android:id="@+id/prod_imgg"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:civ_border_width="1dp"-->
+<!--            android:src="@drawable/avatarmale"-->
+<!--            app:civ_border_color="@color/light_grey1"-->
+<!--            />-->
+
+
+
+
+        <LinearLayout
+            android:id="@+id/your_locatn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="80">
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:text="Youtube Stream"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/notificatn_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_video_camera"
+
+                    />
+
+            </LinearLayout>
+
+
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/notificatn_img"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            android:layout_height="wrap_content">-->
+
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="26dp"-->
+        <!--                android:layout_height="26dp"-->
+        <!--                android:layout_margin="15dp"-->
+        <!--                android:src="@drawable/ic_notification"-->
+        <!--                />-->
+
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:layout_weight="30">
+
+
+        <include
+            layout="@layout/banner_video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></include>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="36k"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:text="Amazing Agriculture Technology - Sweet and Chilli Pepper"/>
+
+
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="10"
+        android:layout_marginLeft="5dp"
+      android:layout_marginTop="15dp"
+      android:orientation="horizontal">
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_marginLeft="2dp"
+          android:orientation="vertical">
+
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+        android:src="@drawable/ic_like"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:text="36k"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_marginLeft="2dp"
+          android:orientation="vertical">
+
+
+          <ImageView
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/ic_dislike"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:text="7.2k"/>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_marginLeft="2dp"
+          android:orientation="vertical">
+
+
+          <ImageView
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:src="@drawable/ic_share"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:text="Share"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_marginLeft="2dp"
+          android:orientation="vertical">
+
+
+          <ImageView
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:src="@drawable/ic_down_arrow"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:text="Download"/>
+
+      </LinearLayout>
+
+
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_marginLeft="2dp"
+          android:orientation="vertical">
+
+
+          <ImageView
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_marginLeft="5dp"
+              android:src="@drawable/ic_heart"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+              android:layout_marginTop="10dp"
+              android:text="Save"/>
+
+      </LinearLayout>
+
+
+
+  </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="60"
+            android:orientation="horizontal">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recylr_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
